@@ -1,12 +1,19 @@
 #.gitignore
 
-.vscode/
-bin/
+#1.모든 파일 무시
+*
 
-out
+#2.폴더 구조는 유지함
+!*/
 
-#오브젝트 파일
-*.o
+#3.vscode는 무시
+!.vscode
 
-#코어 덤프
-core
+#4.확장자를 가진 파일만 추척
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!Makefile
+!README.md
+!.gitignore
