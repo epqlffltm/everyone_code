@@ -1,0 +1,12 @@
+#.gitignore
+
+.vscode/
+bin/
+
+out
+
+#오브젝트 파일
+*.o
+
+#코어 덤프
+core
