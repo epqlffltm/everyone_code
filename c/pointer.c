@@ -10,11 +10,14 @@ int main(void)
   int *pn;
   pn = &n;
 
-  printf("%p\n",*pn);
+  printf("%n\n",*pn);
 
   n = 15;
 
-  printf("%p\n",*pn);
+  printf("%n\n",*pn);
+
+  printf("%p\n",&n);
+  printf("%p\n",pn);
 
   return 0;
 }
