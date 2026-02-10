@@ -6,16 +6,25 @@
 #include<iostream>
 
 void val(int *p);
+void val(int &r);
 
 int main(void)
 {
   int n = 5;
+  int &rn = n;
 
-  std::cout<<n<<std::endl;
+  std::cout<<"n : "<<n<<std::endl;
+  std::cout<<"rn : "<<rn<<std::endl;
 
   val(&n);
 
-  std::cout<<n<<std::endl;
+  std::cout<<"n : "<<n<<std::endl;
+  std::cout<<"rn : "<<rn<<std::endl;
+
+  val(rn);
+
+  std::cout<<"n : "<<n<<std::endl;
+  std::cout<<"rn : "<<rn<<std::endl;
 
   return 0;
 }
@@ -23,4 +32,9 @@ int main(void)
 void val(int *p)
 {
   *p = 10;
+}
+
+void val(int &r)
+{
+  r = 20;
 }
