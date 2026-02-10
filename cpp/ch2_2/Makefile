@@ -7,10 +7,10 @@ CC = g++
 CFLAGS = -Wall -O2 -g
 
 # 수정: wildcard 뒤에 한 칸 띄우기
-SRCS = $(wildcard *.c)
+SRCS = $(wildcard *.cpp)
 
 # 확장자를 떼어내서 실행 파일 이름 목록 생성
-TARGETS = $(SRCS:.c=)
+TARGETS = $(SRCS:.cpp=)
 
 # 'make'만 쳤을 때 모든 실행 파일을 만들도록 설정
 all: $(TARGETS)
