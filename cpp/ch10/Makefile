@@ -4,7 +4,7 @@
 CC = g++
 
 #옵셤
-CFLAGS = -Wall O2 -g
+CFLAGS = -Wall -O2 -g
 
 SRCS = $(wildcard *.cpp)
 
