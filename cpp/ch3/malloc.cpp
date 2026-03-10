@@ -9,7 +9,7 @@
 
 int main(void)
 {
-  strad(time(NULL));
+  srand(time(NULL));
   int size = 0;
   std::cout<< "arrray size :";
   std::cin >> size;
