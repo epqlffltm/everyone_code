@@ -32,7 +32,7 @@ int val(int *p)
 
 int rev(int &r)
 {
-  int n = &r + 10;
+  int n = r + 10;
 
   return n;
 }
