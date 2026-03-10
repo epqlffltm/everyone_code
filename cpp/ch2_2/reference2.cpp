@@ -17,8 +17,8 @@ int main(void)
   std::cout << "r: "<< r << std::endl;
   int pn = val(&n);
   int rn = rev(n);
-  std::cout << "pn: " << std::endl;
-  std::cout << "rn: " << std::endl;
+  std::cout << "pn: " << pn << std::endl;
+  std::cout << "rn: " << rn <<std::endl;
 
   return 0;
 }
