@@ -34,7 +34,7 @@ int main(void)
 
   std::cout << "----------------" << std::endl;
   std::cout << "'hi' 를 삭제" << std::endl;
-  s.erase.(s.find("hi"));
+  s.erase(s.find("hi"));
   is_exist(s,std::string("hi"));
 
   return 0;
