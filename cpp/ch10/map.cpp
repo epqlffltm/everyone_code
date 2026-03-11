@@ -23,7 +23,8 @@ int main(void)
   m["millrnium"]=1000;
   print(m);
   m["aaa"]=12.3456;
-
+  print(m);
+  
   return 0;
 } 
 
