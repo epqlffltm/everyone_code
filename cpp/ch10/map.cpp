@@ -20,6 +20,8 @@ int main(void)
   print(m);
   m["golden ratio"]=40000;
   print(m);
+  m["millrnium"]=1000;
+  print(m);
 
   return 0;
 } 
