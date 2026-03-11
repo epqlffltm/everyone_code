@@ -14,7 +14,7 @@ void print(I begin, I end);
 
 int main(void)
 {
-  srand(time(NULL))
+  srand(time(NULL));
 
   std::vector<int>v;
 
