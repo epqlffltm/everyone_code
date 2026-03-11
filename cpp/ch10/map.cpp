@@ -31,4 +31,5 @@ void print(std::map<k, v>&m)
   {
     std::cout << itr->first << "  " << itr->second << std::endl;
   }
+  std::cout << std::endl;
 }
