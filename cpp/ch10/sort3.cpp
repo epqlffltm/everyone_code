@@ -44,7 +44,7 @@ int main(void)
   std::cout << "정렬 전 ----" << std::endl;
   print(v.begin(), v.end());
 
-  std::sort(v.begin(), v.end(), greater_comp<int>);
+  std::sort(v.begin(), v.end(), greater_comp<int>());
 
   std::cout << "정렬 후 ----" << std::endl;
   print(v.begin(), v.end());
