@@ -37,6 +37,9 @@ int main(void)
   s.erase(s.find("hi"));
   is_exist(s,std::string("hi"));
 
+  std::cout << "----------------" << std::endl;
+  print(s);
+
   return 0;
 }
 
@@ -55,10 +58,10 @@ void is_exist(std::unordered_set<k>&s,k key)
   auto itr = s.find(key);
   if(itr != s.end())
   {
-    std::cout<<key << "true" << std::endl;
+    std::cout<<key << "  true  " << std::endl;
   }
   else
   {
-    std::cout << key << "feles" << std::endl; 
+    std::cout << key << "  feles  " << std::endl; 
   }
 }
