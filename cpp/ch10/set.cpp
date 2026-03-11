@@ -3,6 +3,7 @@
 #include<vector>
 #include<cstdlib>
 #include<ctime>
+#include<algorithm>
 
 template<typename T>
 void print(std::set<T>&s);
@@ -24,6 +25,8 @@ int main(void)
     v.push_back(num);
     s.insert(num);
   }
+
+  std::sort(v.begin(),v.end());
 
   print(v);
   print(s);
