@@ -5,9 +5,10 @@ vector sort 역정렬
 
 #include<iostream>
 #include<cstdlib>
-#include<cmath>
+#include<ctime>
 #include<algorithm>
 #include<vector>
+#include<functional>
 
 template<typename T>
 void print(T begin, T end);
@@ -17,8 +18,8 @@ struct greater_comp
 {
   bool operator()
   (const T& a, const T& b)
-  const{teturn a>b;}
-}
+  const{return a>b;}
+};
 
 /*struct compare
 {
@@ -43,7 +44,7 @@ int main(void)
   std::cout << "정렬 전 ----" << std::endl;
   print(v.begin(), v.end());
 
-  std::sort(v.begin(), v.end(), greater<int>);
+  std::sort(v.begin(), v.end(), greater_comp<int>);
 
   std::cout << "정렬 후 ----" << std::endl;
   print(v.begin(), v.end());
