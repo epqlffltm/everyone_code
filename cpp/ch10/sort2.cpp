@@ -14,8 +14,8 @@ int main(void)
 {
   srand(time(NULL));
   
-  int size = rand()%10;
-    std::cout<< "size = " << size << std::endl;
+  int size = rand()%10+10;
+  std::cout<< "size = " << size << std::endl;
 
   int *ary = new int[size];
 
