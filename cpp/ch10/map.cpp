@@ -27,7 +27,7 @@ int main(void)
 template<typename k, typename v>
 void print(std::map<k, v>&m)
 {
-  for(auto itr = m.begin(); itr != m.end()l ++itr)
+  for(auto itr = m.begin(); itr != m.end(); ++itr)
   {
     std::cout << itr->first << "  " << itr->second << std::endl;
   }
