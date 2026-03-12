@@ -57,7 +57,8 @@ void print(T begin, T end)
 {
   while(begin != end)
   {
-    std::cout << *begin <<std::endl;
+    std::cout << *begin << "  ";
     begin ++;
   }
+  std::cout<<std::endl;
 }
