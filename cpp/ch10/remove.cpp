@@ -42,5 +42,5 @@ void print(T begin, T end)
   {
     std::cout << *begin << "  ";
   }
-  std::cout << std::endl  
+  std::cout << std::endl;
 }
