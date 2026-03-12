@@ -40,7 +40,7 @@ bool func2(int *ary)
 }
 bool func3(int *ary)
 {
-  int *pary = new int[100000000];
+  ary = new int[100000000];
   if(ary == NULL)
   return false;
 
