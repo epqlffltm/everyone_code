@@ -12,7 +12,7 @@ bool func3(int *ary);
 
 int main(void)
 {
-  int *ary;
+  int *ary=nullptr;
 
   if(func1(ary))
   {
@@ -40,7 +40,7 @@ bool func2(int *ary)
 }
 bool func3(int *ary)
 {
-  ary = new int[100000000];
+  ary = (int *)malloc(100000000);
   if(ary == NULL)
   return false;
 
