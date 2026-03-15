@@ -8,10 +8,10 @@
 //#include<vector>
 
 template <typename T>
-class Vecter
+class Vector
 {
   public:
-  Vecter(size_t size) : size_(size)
+  Vector(size_t size) : size_(size)
   {
     data_ = new T[size_];
     forI(int i = 0; i<size_; i++)
