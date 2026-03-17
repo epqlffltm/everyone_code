@@ -11,15 +11,15 @@ template <typename T>
 class Vector
 {
   public:
-  Vector(size_t size) : size_(size)
+  Vector(std::size_t size) : size_(size)
   {
     data_ = new T[size_];
     for(int i = 0; i<size_; i++)
     {
-      data_[i] = i;
+      data_[i] = static_cast<T>(i)
     }
   }
-  const T& at(size_t index) const
+  const T& at(std::size_t index) const
   {
     if(index >= size_)
     {
