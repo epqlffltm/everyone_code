@@ -14,7 +14,7 @@ class Vector
   Vector(size_t size) : size_(size)
   {
     data_ = new T[size_];
-    forI(int i = 0; i<size_; i++)
+    for(int i = 0; i<size_; i++)
     {
       data_[i] = i;
     }
@@ -23,7 +23,7 @@ class Vector
   {
     if(index >= size_)
     {
-      throw out_of_range("백터의 인덱스 범위를 초과하였습니다.");
+      throw std::out_of_range("백터의 인덱스 범위를 초과하였습니다.");
     }
     return data_[index];
   }
