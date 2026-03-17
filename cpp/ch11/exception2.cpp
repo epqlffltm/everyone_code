@@ -14,9 +14,9 @@ class Vector
   Vector(std::size_t size) : size_(size)
   {
     data_ = new T[size_];
-    for(int i = 0; i<size_; i++)
+    for(std::size_t i = 0; i<size_; i++)
     {
-      data_[i] = static_cast<T>(i)
+      data_[i] = static_cast<T>(i);
     }
   }
   const T& at(std::size_t index) const
