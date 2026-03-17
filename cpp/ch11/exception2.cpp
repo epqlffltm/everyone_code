@@ -50,7 +50,7 @@ int main(void)
   }
   catch(std::out_of_range& e)
   {
-    std::cout << "예외 발생 ! " << e.what() << std::endl;
+    std::cerr << "예외 발생 ! " << e.what() << std::endl;
   }
   std::cout << "읽은 데이터 : " << data << std::endl;
 
