@@ -44,4 +44,6 @@ int main(void)
 {
   std::unique_ptr<A> pa(new A());
   do_something(pa.get());
+
+  return 0;
 }
